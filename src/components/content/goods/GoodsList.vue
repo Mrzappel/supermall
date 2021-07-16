@@ -10,14 +10,20 @@ export default {
   name:"GoodsList",
   components: {GoodsListItem},
   props: {
-    type: Array,
-    default() {
+    goods: {
+      type: Array,
+      default() {
       return [] 
+      }
     }
   }
 }
 </script>
 
 <style>
-
+  .goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+  }
 </style>
